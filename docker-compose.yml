@@ -6,7 +6,7 @@ services:
   app:
     build:
       context: ./../
-      dockerfile: docker/app.dockerfile
+      dockerfile: laravel-docker/app.dockerfile
     links:
       - mysql
     depends_on:
@@ -19,7 +19,7 @@ services:
   web:
     build:
       context: ./../
-      dockerfile: docker/web.dockerfile
+      dockerfile: laravel-docker/web.dockerfile
     working_dir: /var/www
     volumes_from:
       - app
