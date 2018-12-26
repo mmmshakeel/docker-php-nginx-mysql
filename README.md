@@ -5,6 +5,10 @@ Simple docker setup to use with php apps including Laravel
 1.  Clone the `laravel-docker` in to your project directory.
 2.  cd in to `laravel-docker` and run `docker-compose up -d`. 
 
+### Already have a PHP project:
+In most cases you will have a PHP project already. In that case add this as a submodule.  
+`git submodule add https://github.com/mmmshakeel/laravel-docker.git`
+
 ## MySQL credentials 
 Check the `docker-compose.yml` file for the credentials. The defaults are as follows.  
 ```
