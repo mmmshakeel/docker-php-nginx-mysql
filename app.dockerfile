@@ -18,4 +18,5 @@ COPY . /var/www
 
 WORKDIR /var/www
 
+# comment out the following line if you intend to use this setup not for laravel
 RUN chmod -R 777 /var/www/storage/
