@@ -31,6 +31,20 @@ and when prompted enter your root password (default is `root`).
 ## Not Laravel?
 If you intend to use this for a not laravel setup, make sure to add your app's public files inside the folder `public`. Because the nginx document root has been set to the following location.  
 `/var/www/public`  
+
+So your directory structure should be as follows:  
+```
+project-root
+  |- laravel-docker
+  |  |- README.md
+  |  |- app.dockerfile
+  |  |- docker-compose.yml
+  |  |- vhost.conf
+  |  |- web.dockerfile
+  |- public
+  |  |- index.php
+```
+
 In case if you need to change the document root of the web server (nginx), open the `vhost.conf` file and do the relevant change in the line number #4.
 
 ## Access localhost
